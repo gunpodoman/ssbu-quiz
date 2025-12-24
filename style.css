@@ -1,0 +1,49 @@
+:root {
+    --primary: #6366f1;
+    --success: #10b981;
+    --danger: #ef4444;
+    --bg: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+body {
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    background: var(--bg);
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; margin: 0; color: #333;
+}
+
+.container {
+    background: white; padding: 2rem; border-radius: 24px;
+    width: 90%; max-width: 550px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.series-name { font-size: 2.2rem; font-weight: 800; margin-top: 10px; color: #1e293b; }
+
+.found-container {
+    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+    margin: 25px 0; min-height: 80px; padding: 15px; background: #f8fafc; border-radius: 16px;
+}
+
+.char-chip {
+    padding: 8px 15px; background: #e2e8f0; border-radius: 10px;
+    font-size: 0.95rem; color: #94a3b8; transition: all 0.3s;
+}
+
+.char-chip.found {
+    background: var(--primary); color: white; font-weight: bold; transform: translateY(-2px);
+}
+
+.input-group { margin-bottom: 20px; }
+input {
+    width: 100%; padding: 15px; border: 2px solid #e2e8f0; border-radius: 12px;
+    font-size: 1.2rem; text-align: center; box-sizing: border-box;
+}
+
+.button-group { display: flex; gap: 10px; }
+.btn {
+    flex: 1; padding: 15px; border: none; border-radius: 12px;
+    font-size: 1rem; font-weight: 700; cursor: pointer; color: white; background: var(--primary);
+}
+.btn-skip { background: #64748b; }
+
+.feedback-msg { height: 30px; margin-bottom: 10px; font-weight: 600; }
