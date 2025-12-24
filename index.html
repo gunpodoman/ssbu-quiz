@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대난투 얼티밋 시리즈 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="quiz-screen">
+        <header>
+            <div class="status">
+                <span>SSBU ENCYCLOPEDIA</span>
+                <span id="remain-num">로딩 중...</span>
+            </div>
+        </header>
+
+        <div class="question-card">
+            <span class="category-badge">ORIGIN SERIES</span>
+            <div class="series-name" id="question-text">시리즈 이름</div>
+        </div>
+
+        <div class="found-container" id="found-box"></div>
+
+        <div class="feedback-msg" id="feedback"></div>
+
+        <div class="input-group">
+            <input type="text" id="answer-input" placeholder="파이터 이름을 입력하세요" autocomplete="off">
+        </div>
+
+        <div class="button-group">
+            <button class="btn" id="action-btn" onclick="handleAction()">제출</button>
+            <button class="btn btn-skip" id="skip-btn" onclick="skipRound()">넘기기 (포기)</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
